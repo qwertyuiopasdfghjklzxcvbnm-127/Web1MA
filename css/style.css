@@ -1,28 +1,27 @@
-        /* Container for vertical nav */
-        .vertical-nav {
-        width: 200px;               /* fixed width sidebar */
+        nav {
         background-color: #333;
-        height: 100vh;              /* full viewport height */
         }
-        /* Remove list styling */
-        .vertical-nav ul {
+        nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        display: flex;
         }
-        /* Links take full width */
-        .vertical-nav a {
-        display: block;             /* stack links vertically */
+        nav li {
+        margin-right: 20px;
+        }
+        nav a {
         color: white;
         text-decoration: none;
         padding: 14px 20px;
+        display: block;
         }
         /* Hover effect */
-        .vertical-nav a:hover {
+        nav a:hover {
         background-color: #575757;
         }
-        /* Active/current page */
-        .vertical-nav a.active {
-        background-color: #04AA6D;
-        font-weight: bold;
+        /* Active (current page) link */
+        nav a.active {
+        background-color: #04AA6D;  /* a green highlight */
+        font-weight: bold;          /* make it stand out */
         }
